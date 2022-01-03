@@ -105,7 +105,7 @@ function getTodos(){
     }
 
     todos.forEach(function(todo){
-        if(inputEl.value!=""){
+        if(todo!=""){
     const todoDiv=document.createElement("div");//div
     todoDiv.classList.add("todo-div");
     //Create li's
