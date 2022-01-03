@@ -72,10 +72,10 @@ body{
  }
 
  .check-btn{
-     background-color: green;
+     background-color: rgb(39, 184, 39);
  }
  .trash-btn{
-     color:red;
+     background:red;
  }
 
  .fa-check,.fa-trash{
