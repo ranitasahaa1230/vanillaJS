@@ -2,18 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+html,body{
     background-image: linear-gradient(100deg, rgb(219, 129, 219),rgb(233, 233, 27));
+    position: relative;
+    min-height: calc(100.4vh - 1rem);
+    user-select: none;
+    margin: 0;
+
 }
+/* Only for FOOTER */
+body::after {
+    content: '';
+    display: block;
+    height: 3rem;
+}
+
  header{
      display: flex;
      justify-content: center;
      align-items: center;
-     margin: 2rem;
+     margin: 0.8rem;
      font-size: 1.5rem;
+     color:rgb(66, 3, 3);
+     font: bolder;
  }
 
  form, #div-container{
@@ -26,6 +40,10 @@ body{
      font-size: 1rem;
      border: none;
      padding: 1rem;
+ }
+
+ form input:focus{
+     outline: none;
  }
 
  form button{
@@ -54,7 +72,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: all 0.5s ease;
  }
 
@@ -106,8 +124,9 @@ body{
  
 select{
     color: rgb(110, 12, 110);
-    width: 10rem;
+    width: 12rem;
     cursor: pointer;
+    font-size: 1.2rem;
     padding: 1rem;
 }
  #filter::after{
@@ -124,4 +143,18 @@ select{
  #filter:hover::after{
      color: white;
      background: rgb(99, 8, 99);
+ }
+
+ footer{
+     background-color: rgb(189, 64, 64);
+     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+
  }
