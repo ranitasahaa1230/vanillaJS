@@ -10,6 +10,7 @@ filterOption.addEventListener("click",filterTodo);
 
 function addTodo(event){
     event.preventDefault();//prevents formfrom submitting
+    if(inputEl.value!=""){
     const todoDiv=document.createElement("div");//div
     todoDiv.classList.add("todo-div");
     //Create li's
@@ -32,6 +33,7 @@ function addTodo(event){
     //append to list
     todoList.appendChild(todoDiv);
     inputEl.value="";
+    }
 }
 
 function deleteCheckTodo(e){
