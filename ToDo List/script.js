@@ -105,6 +105,7 @@ function getTodos(){
     }
 
     todos.forEach(function(todo){
+        if(inputEl.value!=""){
     const todoDiv=document.createElement("div");//div
     todoDiv.classList.add("todo-div");
     //Create li's
@@ -124,6 +125,7 @@ function getTodos(){
     todoDiv.appendChild(trashBtn);
     //append to list
     todoList.appendChild(todoDiv);
+        }
     });
 }
 
