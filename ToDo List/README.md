@@ -3,7 +3,7 @@
 A web app that allows the users to enter their **To Do Tasks**.
 
 ## Live 
-[ToDo List](https://himadri-todo-list.netlify.app/)
+[ToDo List](https://ranitasaha-todo-list.netlify.app/)
 
 ## Features
 
