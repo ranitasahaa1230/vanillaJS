@@ -1,0 +1,27 @@
+.class, h3, h5 {
+  font-size: 2rem;
+  color: red;
+  background: pink;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+h1 {
+  margin: 4rem auto;
+  background: salmon;
+  font-size: 18px;
+}
+h1:hover {
+  color: red;
+}/*# sourceMappingURL=styles.css.map */

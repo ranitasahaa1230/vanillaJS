@@ -1,0 +1,24 @@
+@import 'common';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+$var-text:salmon;//variables
+
+main{
+    @include flexbox(column,start);
+}
+h1{
+    margin: 4rem auto;
+    background: $var-text;
+    font-size: map-get($map: $font-size, $key: 'mobile');
+    &:hover{//& targets parent el
+        color:red;
+    }
+}
+
+h3,h5{
+    @extend .class
+}

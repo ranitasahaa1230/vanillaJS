@@ -1,0 +1,9 @@
+@import 'common';
+
+body{
+    background: red;
+}
+
+h3{
+    @extend .class
+}
